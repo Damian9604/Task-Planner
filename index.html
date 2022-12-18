@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <imghead>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Task Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="toDoList">
+      <form>
+        <input required id="taskInput" placeholder="Enter a Task" />
+        <select required name="importance">
+          <option value="" disabled selected>Priority</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+        <input required type="date" placeholder="wybierz deadline" />
+        <input class="submitButton" type="submit" value="Add" />
+        
+      </form>
+      <div class="tasksList">
+        <h3>Task List</h3>
+      </div>
+      <div class="doneList">
+        <h3>Done Task List</h3>
+      </div>
+      <div class="options">
+        <select name="filter">
+          <option value="" disabled selected>Filter</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
